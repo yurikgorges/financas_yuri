@@ -14,14 +14,15 @@ def dados():
     categoria = st.selectbox('Categoria',['Comida','Lazer','Eletro/Casa','Tech'])
     data = st.date_input('Insira a data')
     d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
-    df = st.dataframe(d)
     return d
 
+d = dados()
+df = st.dataframe(d)
 
 if (choice=='Inserir novo pagamento'):    
     dados()
 else:
-    tabela = dados(d)
+    tabela = dados()
     df = st.dataframe(tabela)
 
     
