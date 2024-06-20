@@ -5,7 +5,7 @@ import streamlit as st
 
 st.title("Finanças pessoais v0.1")
 
-st.selectbox('O que fazer?','Inserir novo pagamnento','Visualizar pagamentos já feitos')
+st.selectbox('O que fazer?',['Inserir novo pagamnento','Visualizar pagamentos já feitos'])
 
 
 bd_pags = st.button('Visualizar pagamentos já feitos')
