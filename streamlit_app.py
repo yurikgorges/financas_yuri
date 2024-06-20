@@ -7,8 +7,7 @@ st.title("Finanças pessoais v0.1")
 
 st.header("Insira aqui as informações necesárias")
 
-st.checkbox('Sim')
-st.checkbox('Não')
+st.selectbox('Escolha a forma de pagamento'['Cartão BB','Cartão Nubank','Dinheiro/PIX'])
 
 
 
