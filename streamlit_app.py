@@ -17,13 +17,12 @@ def dados():
     return d
 
 d = dados()
-df = st.dataframe(d)
 
 if (choice=='Inserir novo pagamento'):    
     dados()
+    df = st.data_editor(d)
 else:
-    tabela = dados()
-    df = st.dataframe(tabela)
+    df = st.dataframe(d)
 
     
 
