@@ -5,7 +5,7 @@ import streamlit as st
 
 st.title("Finanças pessoais v0.1")
 
-choice = st.selectbox('# O que fazer?',['Inserir novo pagamento','Visualizar pagamentos já feitos'])
+choice = st.multiselect('# O que fazer?',['Inserir novo pagamento','Visualizar pagamentos já feitos'])
 
 if (choice=='Inserir novo pagamento'):    
     desc_gasto = st.text_input('Descrição do gasto')
