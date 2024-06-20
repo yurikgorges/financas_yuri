@@ -6,9 +6,8 @@ import streamlit as st
 # Finanças pessoais v0.1
 
 """
-texto = st.write("Hello, im trying something here")
+st.write("Hello, im trying something here")
 
-print(texto)
 
 
 
