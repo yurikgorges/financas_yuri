@@ -9,6 +9,7 @@ st.title("Finanças pessoais v0.1")
 novo_pag = st.button('Inserir um novo pagamento')
 bd_pags = st.button('Visualizar pagamentos já feitos')
 
+novo_pag = ("teste")
 
 print(novo_pag)
 
