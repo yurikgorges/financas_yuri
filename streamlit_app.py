@@ -17,7 +17,7 @@ if (choice=='Inserir novo pagamento'):
     df = st.dataframe(d)
 else:
     st.text('escolheu a outra')
-    st.dataframe(d)
+    st.table(df)
 
     
 
