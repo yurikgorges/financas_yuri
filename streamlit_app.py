@@ -2,12 +2,10 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-"""
-# Finanças pessoais v0.1
 
-"""
-st.write("Hello, im trying something here")
+st.title("Finanças pessoais v0.1")
 
+st.header("Insira aqui as informações necesárias")
 
 
 
