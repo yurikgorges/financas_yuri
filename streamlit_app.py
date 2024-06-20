@@ -16,8 +16,8 @@ if (choice=='Inserir novo pagamento'):
     d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
     df = st.dataframe(d)
 else:
-    st.text('escolheu a outra')
-    st.write(df)
+    d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
+    df = st.dataframe(d)
 
     
 
