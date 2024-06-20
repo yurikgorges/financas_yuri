@@ -21,8 +21,8 @@ def dados():
 if (choice=='Inserir novo pagamento'):    
     dados()
 else:
-    dados(d)
-    df = st.dataframe(d)
+    tabela = dados()
+    df = st.dataframe(tabela)
 
     
 
