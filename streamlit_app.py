@@ -14,6 +14,11 @@ if (choice=='Inserir novo pagamento'):
     categoria = st.selectbox('Categoria',['Comida','Lazer','Eletro/Casa','Tech'])
     data = st.date_input('Insira a data')
 
+d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
+
+df = pd.DataFrame(d)
+
+st.text(d)
 
     
 
