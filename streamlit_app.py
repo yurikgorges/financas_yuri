@@ -7,7 +7,8 @@ st.title("Finanças pessoais v0.1")
 
 choice = st.selectbox('O que fazer?',['Inserir novo pagamnento','Visualizar pagamentos já feitos'])
 
-print(choice)
+
+st.text(choice)
 
 
 
