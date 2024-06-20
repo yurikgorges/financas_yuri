@@ -7,16 +7,9 @@ st.title("Finanças pessoais v0.1")
 
 choice = st.selectbox('O que fazer?',['Inserir novo pagamnento','Visualizar pagamentos já feitos'])
 
-if (choice=='Inserir novo pagamento'):
-    
+if (choice=='Inserir novo pagamento'):    
     st.write('escolheu a 1 opção')
 
-
-
-
-
-
-st.write(choice)
 
 
 
