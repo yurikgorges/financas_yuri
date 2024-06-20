@@ -18,7 +18,7 @@ d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R
 
 df = pd.DataFrame(d)
 
-st.text(d)
+st.text(df)
 
     
 
