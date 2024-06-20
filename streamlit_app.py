@@ -10,6 +10,9 @@ novo_pag = st.button('Inserir um novo pagamento')
 bd_pags = st.button('Visualizar pagamentos já feitos')
 
 
+print(novo_pag)
+
+
 # st.selectbox('Escolha a forma de pagamento',['Cartão BB','Cartão Nubank','Dinheiro/PIX'])
 
 
