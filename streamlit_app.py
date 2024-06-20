@@ -7,7 +7,7 @@ st.title("Finanças pessoais v0.1")
 
 choice = st.selectbox('# O que fazer?',['Inserir novo pagamento','Visualizar pagamentos já feitos'])
 
-if (choice=='Inserir novo pagamento'):    
+def dados():
     desc_gasto = st.text_input('Descrição do gasto')
     forma_pag = st.selectbox('Qual forma de pagamento',['Cartão Nubank','Cartão BB','Dinheiro/PIX'])
     valor_gasto = st.text_input('Valor (R$)')
@@ -15,8 +15,11 @@ if (choice=='Inserir novo pagamento'):
     data = st.date_input('Insira a data')
     d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
     df = st.dataframe(d)
-else:
-    st.text('escolheu a outra')
+    return df
+
+
+if (choice=='Inserir novo pagamento'):    
+    dados()
 
     
 
