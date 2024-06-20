@@ -13,10 +13,10 @@ if (choice=='Inserir novo pagamento'):
     valor_gasto = st.text_input('Valor (R$)')
     categoria = st.selectbox('Categoria',['Comida','Lazer','Eletro/Casa','Tech'])
     data = st.date_input('Insira a data')
-
-d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
-
-df = st.dataframe(d)
+    d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
+    df = st.dataframe(d)
+else:
+    df = st.dataframe(d)
 
     
 
