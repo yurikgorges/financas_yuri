@@ -15,11 +15,14 @@ def dados():
     data = st.date_input('Insira a data')
     d = {'Descrição':[desc_gasto],'Forma de pagamento':[forma_pag],'Valor gasto (R$)':[valor_gasto],'Categoria':[categoria],'Data':[data]}
     df = st.dataframe(d)
-    return df
+    return d
 
 
 if (choice=='Inserir novo pagamento'):    
     dados()
+else:
+    dados(d)
+    df = st.dataframe(d)
 
     
 
